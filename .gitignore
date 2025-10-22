@@ -57,9 +57,10 @@ data/config.json
 *.enc
 
 # PyInstaller
-*.spec
 build/
 dist/
+# Allow our build spec file
+!Clinical_Notes_AI.spec
 
 # Testing
 .pytest_cache/
