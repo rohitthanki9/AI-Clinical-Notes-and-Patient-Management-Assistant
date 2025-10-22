@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Application-specific
+data/patients.db
+data/.encryption.key
+data/config.json
+*.db
+*.db-journal
+
+# Logs
+*.log
+
+# Audio files (temporary)
+*.wav
+*.mp3
+*.m4a
+
+# Exports
+*.pdf
+*.docx
+*.enc
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Whisper model cache
+~/.cache/whisper/
