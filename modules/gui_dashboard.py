@@ -150,11 +150,11 @@ class DashboardWindow:
         table_frame = ttk.Frame(patients_frame)
         table_frame.pack(fill=BOTH, expand=YES)
 
-        # Scrollbars
-        y_scroll = ttk.Scrollbar(table_frame, orient=VERTICAL)
+        # Scrollbars (use standard tkinter scrollbar to avoid ttkbootstrap style issues)
+        y_scroll = tk.Scrollbar(table_frame, orient=tk.VERTICAL)
         y_scroll.pack(side=RIGHT, fill=Y)
 
-        x_scroll = ttk.Scrollbar(table_frame, orient=HORIZONTAL)
+        x_scroll = tk.Scrollbar(table_frame, orient=tk.HORIZONTAL)
         x_scroll.pack(side=BOTTOM, fill=X)
 
         # Treeview

@@ -166,8 +166,12 @@ class LoginWindow:
 
         if doctor:
             messagebox.showinfo("Success", f"Welcome, Dr. {doctor['name']}!")
-            self.root.destroy()
+            # Hide the login window instead of destroying it
+            self.root.withdraw()
+            # Call the callback to create dashboard
             self.on_login_success(doctor)
+            # Now destroy the login window after dashboard is created
+            self.root.after(100, self.root.destroy)
         else:
             messagebox.showerror("Login Failed", "Invalid email or password")
             self.login_password.delete(0, END)
